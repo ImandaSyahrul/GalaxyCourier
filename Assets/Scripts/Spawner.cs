@@ -19,6 +19,16 @@ public class Spawner : MonoBehaviour, IArea<BoxCollider>
         
     }
 
+    // Pick a random point on collider
+    public static Vector3 RandomPointInBounds(Bounds bounds)
+    {
+        return new Vector3(
+            Random.Range(bounds.min.x, bounds.max.x),
+            Random.Range(bounds.min.y, bounds.max.y),
+            Random.Range(bounds.min.z, bounds.max.z)
+        );
+    }
+
     public void InitCollider(BoxCollider col)
     {
         Camera camera = Camera.main;
