@@ -51,4 +51,11 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    //Accelerate player's rotation speed
+    //void accelerate()
+    //{
+    //    speed += acceleration * time.deltatime;
+    //    speed = mathf.clamp(speed, 1, maxspeed);
+    //}
+
 }

@@ -10,6 +10,15 @@ public class Spawner : MonoBehaviour, IArea<BoxCollider>
     private BoxCollider boxCollider;
     private Coroutine Cr_Spawn;
 
+    /*
+     Task: 
+     - Buat spawner yang khusus obstacle dan background object(kayak obstacle tapi ga di depan jalan player)
+     - Buat variasi spawner.(level design)
+     - Buat variasi obstacle
+     - Buat si spawner bisa spawn obstacle yang variatif
+         
+     */
+
     // Start is called before the first frame update
     void Start()
     {
@@ -84,7 +93,7 @@ public class Spawner : MonoBehaviour, IArea<BoxCollider>
             SpawnObstacle();
 
             //Menunggu beberapa detik sesuai dengan spawn interval
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(0.2f);
         }
     }
 }
