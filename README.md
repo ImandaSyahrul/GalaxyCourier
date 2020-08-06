@@ -3,5 +3,5 @@
 
 
 ## Devs
-Imanda (Story Writer, Programmer, 2D Artist, Sound Engineer)
-Annazar (Programmer)
+- Imanda (Story Writer, Programmer, 2D Artist, Sound Engineer)
+- Annazar (Programmer)
