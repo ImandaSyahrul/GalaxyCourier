@@ -2,13 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Destroyer : MonoBehaviour
+public class DistanceCounter : MonoBehaviour
 {
-    private BoxCollider boxCollider;
     // Start is called before the first frame update
     void Start()
     {
-        boxCollider = GetComponent<BoxCollider>();
+        
     }
 
     // Update is called once per frame
@@ -16,6 +15,4 @@ public class Destroyer : MonoBehaviour
     {
         
     }
-
-
 }

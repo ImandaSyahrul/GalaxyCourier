@@ -84,7 +84,7 @@ public class Spawner : MonoBehaviour, IArea<BoxCollider>
             SpawnObstacle();
 
             //Menunggu beberapa detik sesuai dengan spawn interval
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(0.5f);
         }
     }
 }
