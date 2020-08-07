@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class DistanceCounter : MonoBehaviour
 {
+    /*
+     To do:
+     - Membuat counter distance yang menghitung jarak yang ditempuh
+     - converting distance to score
+    */
     // Start is called before the first frame update
     void Start()
     {
