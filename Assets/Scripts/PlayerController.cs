@@ -47,6 +47,21 @@ public class PlayerController : MonoBehaviour
             transform.RotateAround(center.position, new Vector3( 0, 0, Input.GetAxis("Horizontal")), _speed * Time.deltaTime);
         }
 
+        if (Input.touchCount > 0)
+        {
+            var touch = Input.GetTouch(0);
+            if (touch.position.x < Screen.width / 2)
+            {
+                transform.RotateAround(center.position, new Vector3(0, 0, -1), _speed * Time.deltaTime);
+                Debug.Log("Left click");
+            }
+            else if (touch.position.x > Screen.width / 2)
+            {
+                transform.RotateAround(center.position, new Vector3(0, 0, 1), _speed * Time.deltaTime);
+                Debug.Log("Right click");
+            }
+        }
+
 #elif UNITY_STANDALONE_WIN
 
         if (Input.GetAxis("Horizontal") != 0)

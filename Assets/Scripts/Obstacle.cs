@@ -9,6 +9,12 @@ public class Obstacle : MonoBehaviour
     private Rigidbody rb;
     private float _speed = 10;
 
+    // Awake is caled when the object is instantiated
+    private void Awake()
+    {
+        GetComponentInChildren<SpriteRenderer>().color = Random.ColorHSV(0.1f,0.3f,0.3f,0.55f,1,1,1,1);
+    }
+
     // Start is called before the first frame update
     void Start()
     {
